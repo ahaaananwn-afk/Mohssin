@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>روائع البيان - جميع الروابط</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #27ae60;
+            --primary-dark: #1e8449;
+            --dark-color: #0a192f;
+            --light-color: #f8f9fa;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Tajawal', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, var(--dark-color) 0%, #000 100%);
+            color: var(--light-color);
+            min-height: 100vh;
+        }
+        
+        /* شريط التنقل */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 1.5rem;
+            background: rgba(10, 25, 47, 0.9);
+            position: relative;
+            z-index: 100;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo i {
+            font-size: 1.5rem;
+        }
+        
+        /* محتوى الروابط */
+        .links-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem;
+            padding: 1rem;
+        }
+        
+        .link-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .link-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+        }
+        
+        .link-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .link-card p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        
+        .link-card a {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1.5rem;
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+        
+        .link-card a:hover {
+            background: var(--primary-dark);
+        }
+        
+        /* تأثيرات ثلاثية الأبعاد */
+        .shape {
+            position: fixed;
+            opacity: 0.1;
+            z-index: -1;
+            animation: float 15s infinite ease-in-out;
+        }
+        
+        .shape-1 {
+            top: 20%;
+            left: 10%;
+            width: 200px;
+            height: 200px;
+            background: var(--primary-color);
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        }
+        
+        .shape-2 {
+            bottom: 15%;
+            right: 10%;
+            width: 150px;
+            height: 150px;
+            background: white;
+            border-radius: 50% 50% 20% 80% / 60% 40% 60% 40%;
+            animation-delay: 2s;
+        }
+        
+        .shape-3 {
+            top: 50%;
+            left: 70%;
+            width: 100px;
+            height: 100px;
+            background: var(--primary-color);
+            border-radius: 40% 60% 60% 40% / 70% 50% 50% 30%;
+            animation-delay: 4s;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- أشكال ثلاثية الأبعاد في الخلفية -->
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+    
+    <!-- شريط التنقل مع زر العودة -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <i class="fas fa-arrow-right"></i>
+            <span>العودة للرئيسية</span>
+        </a>
+    </nav>
+    
+    <!-- محتوى الروابط -->
+    <div class="links-container">
+        <div class="link-card">
+            <h3>كاب كات</h3>
+            <p>تطبيق احترافي لتعديل الفيديوهات وتصميم المحتوى المرئي</p>
+            <a href="https://drive.google.com/file/d/1Jqncp1jUbJfQN2Dhzy1pGi9GDblrEFxk/view?usp=drivesdk" target="_blank">تحميل</a>
+        </div>
+        
+        <div class="link-card">
+            <h3>حزمة الأصوات</h3>
+            <p>مجموعة مميزة من المؤثرات الصوتية والموسيقى</p>
+            <a href="https://drive.google.com/drive/folders/1p8wKqVDRH2Kcj3Chf9utPV1TCMBeioQk" target="_blank">تحميل</a>
+        </div>
+        
+        <div class="link-card">
+            <h3>قناة التيك توك</h3>
+            <p>تابعنا على تيك توك لمشاهدة أحدث مقاطعنا</p>
+            <a href="https://www.tiktok.com/@mohssin.bm_no1" target="_blank">زيارة</a>
+        </div>
+        
+        <div class="link-card">
+            <h3>قناة اليوتيوب</h3>
+            <p>اشترك في قناتنا على يوتيوب لمشاهدة محتوانا</p>
+            <a href="https://www.youtube.com/@%D8%B1%D9%88%D8%A7%D8%A6%D8%B9.%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86" target="_blank">زيارة</a>
+        </div>
+        
+        <!-- يمكنك إضافة المزيد من الروابط هنا -->
+        <div class="link-card">
+            <h3>رابط إضافي 1</h3>
+            <p>وصف الرابط الإضافي الأول</p>
+            <a href="#" target="_blank">زيارة</a>
+        </div>
+        
+        <div class="link-card">
+            <h3>رابط إضافي 2</h3>
+            <p>وصف الرابط الإضافي الثاني</p>
+            <a href="#" target="_blank">زيارة</a>
+        </div>
+    </div>
+</body>
+</html>
